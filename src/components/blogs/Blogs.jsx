@@ -14,7 +14,7 @@ const Blogs = ({handleBookmark}) => {
             <div>Total:{blogs.length}</div>
             {/* All blogs  */}
             <div className='grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-2'>
-                {blogs.map((blog) => <Blog handleBookmarkBookmark={handleBookmark} key={blog.id} blog={blog}></Blog>)}
+                {blogs.map((blog) => <Blog handleBookmark={handleBookmark} key={blog.id} blog={blog}></Blog>)}
             </div>
         </div>
     );

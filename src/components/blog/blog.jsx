@@ -19,7 +19,7 @@ const Blog = ({ blog, handleBookmark }) => {
                         <button onClick={() => handleBookmark(blog)}>  <IoMdBookmark  size={25} /></button>
                     </div>
                     <div className='flex gap-2'>
-                        {blog.hashtags.map(hash => <span className=' text-md'>{hash}</span>)}
+                        {blog.hashtags.map(hash => <span className=' text-md' key={hash.length}>{hash}</span>)}
                     </div>
                     <div className="card-actions  justify-between">
                         <button className='btn btn-primary'>Bookmark</button>
